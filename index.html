@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lettuce Eat</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index.html">Lettuce Eat</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/add-restaurant.html">Add Restaurant</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    
+    <div class="customize">
+      <h1 class="build-your-own">
+        Build Your Own Diet
+      </h1>
+      <p>
+        instruction...
+      </p>
+      
+<!--   accessible checkboxes for restrictions -- vegan, vegetarian, celiac    -->
+<!--    id and for are to allow users to click on the text (not just the checkbox) to check/undo    -->
+<!--   resource: https://www.a11ymatters.com/pattern/checkbox/     -->
+      <fieldset class="checkbox-group">
+        <legend>Select all your dietary restrictions</legend>
+        <span class="checkboxes">
+        <div class="c-group_item">
+          <input id="c1" type="checkbox">
+          <label for="c1">vegan</label>
+        </div>
+        
+        <div class="c-group_item">
+          <input id="c2" type="checkbox">
+          <label for="c2">vegetarian</label>
+        </div>
+        
+        <div class="c-group_item">
+          <input id="c3" type="checkbox">
+          <label for="c3">celiac</label>
+        </div>
+        </span>
+      
+        
+      </fieldset>
+      <!--   text box     -->
+      
+      <!--    section -- results ->search bar    -->
+      <div class="restaurants">
+        <!--    searchbox      -->
+        <!--    resource: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/searchbox_role      -->
+        <form role="search">
+          <input type="search" role="searchbox" aria-description="search resuls will appear below"
+                 id="search" value="" />
+          <label for="search">Search Restaurant</label>
+          <button>Search</button>
+        </form>
+        <div aria-live="polite" role="region" aria-atomic="true">
+          <div class="sr-only">
+          </div>
+        </div>
+        
+        <div id="search-results">
+           <!--     each entry - name, labels, link to directions, below: information (menu)    -->
+        </div>
+        
+       
+        
+      </div>
+
+
+
+    </div>
+    
+    
+    
+    
+    <footer class="footer">
+      <p>
+        Contact Us
+      </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  li, a, button {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #fff9f0;
+  }
+  
+  .nav-links {
+    list-style: none;
+  /*   float: left; */
+  }
+  
+  .nav-links li {
+    float: left;
+    display: inline-blocks;
+    padding: 10px 20px;
+  }
+  
+  .nav-links li a {
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #5b7553;
+    color: white;
+  }
+  
+  .customize {
+    background-color: #afcc72;
+    text-align: center;
+    width: 100%;
+  }
+  
+  label {
+    user-select: none; /** for accessibility **/
+  }
+  
+  .checkboxes {
+    
+  /*   display: inline-block; */
+  }
+  
+  .c-group_item {
+    display: inline-block;
+    margin: auto;
+  }
+  
+  .restaurants {
+    background-color: #f2e6df;
+  }
