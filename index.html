@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lettuce Eat</title>
+    <link rel="stylesheet" href="/LettuceEat/style.css" />
+    <script src="/LettuceEat/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lettuce Eat</title>
-  <link rel="stylesheet" href="/LettuceEat/style.css" />
-  <script src="/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/LettuceEat">Lettuce Eat</a></li>
-        <li><a href="/LettuceEat/about.html">About</a></li>
-        <li><a href="/LettuceEat/add-restaurant.html">Add Restaurant</a></li>
-      </ul>
-    </nav>
+  <body>
+    <div class="header">
+      <img src="/LettuceEat/logo.png" width="90px">
+    </div>
+    <div id="navbar">
+      <a class="active" href="/LettuceEat">Home</a>
+      <a href="/LettuceEat/about.html">About</a>
+      <a href="/LettuceEat/add-restaurant.html">Add Restaurant</a>
+    </div>
     </header>
 
     
-    <div class="customize">
+    <div class="content">
       <h1 class="build-your-own">
-        Build Your Own Diet
+        Build Your Own Diet!
       </h1>
       <p>
-        instruction...
+        First, select your dietary restrictions: vegan, vegetarian, and gluten-free. 
+        Then, input specific ingredients that you prefer to avoid.
+        Based on your input on your dietary requirements or preferences, we will display
+        all restaurants with menus that meet your requirements, along with the list of 
+        their ingredients and links to Google Maps for directions.
       </p>
       
 <!--   accessible checkboxes for restrictions -- vegan, vegetarian, celiac    -->
@@ -50,8 +53,6 @@
           <label for="c3">celiac</label>
         </div>
         </span>
-      
-        
       </fieldset>
       <!--   text box     -->
       
@@ -73,23 +74,10 @@
         <div id="search-results">
            <!--     each entry - name, labels, link to directions, below: information (menu)    -->
         </div>
-        
-       
-        
+      
       </div>
 
-
-
     </div>
-    
-    
-    
-    
-    <footer class="footer">
-      <p>
-        Contact Us
-      </p>
-    </footer>
 </body>
 
 </html>
