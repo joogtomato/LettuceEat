@@ -22,16 +22,31 @@
 
     
     <div class="content">
-<!--     <div class="navbar">
-      <a class="nav-home" href="/index.html">Lettuce Eat</a>
-      <a href="/about.html">About</a>
-      <a href="/add-restaurant.html">Add Restaurant</a>
-    </div> -->
-    
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGIRWYS3rxt1ykKE3G5Nb6Hq_QvVK4FSJpFCh3I87ovELVTw/viewform?embedded=true" 
-      width="640" height="381" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    
+     <h1>Restaurant Request</h1>
+     <p>
+      Hi, we appreciate your contribution to making our project better!
+      Please share the details below to submit a request for adding
+      the restaurant you wish to see featured on our website!
+     </p>
+     
+     <form class="add_restaurant_form" action="https://docs.google.com/forms/d/e/1FAIpQLSfGIRWYS3rxt1ykKE3G5Nb6Hq_QvVK4FSJpFCh3I87ovELVTw/formResponse"
+            target="restaurant_form">
+      <label for="entry.282034390">What is the name of the restaurant you want to add?</label><br>
+      <input class="form_input" type="text" name="entry.282034390" placeholder="You answer"
+             aria-description="Your input (restaurant name) to the form will be submitted via Google Form to add restaurant information."><br>
+      <label for="entry.287504836">Please provide a URL link to the restaurant's menu page.</label><br>
+      <input class="form_input" type="text" name="entry.287504836" placeholder="Your answer"
+             aria-description="Your input (restaurant menu page URL) to the form will be submitted via Google Form to add restaurant information."><br>
+      <label for="entry.1481073834">Do you have anything else you'd like us to know regarding the restaurant? (e.g. other accessibility features the restaurant provides)</label><br>
+      <input class="form_input" type="text" name="entry.1481073834" placeholder="Your answer"
+             aria-description="Your input (additional information) to the form will be submitted via Google Form to add restaurant information."><br>
+      <button id="form_button" type="submit" onclick="displaySubmit()">Submit Form</button>
+     </form>
+      <div aria-live="polite" role="region" aria-atomic="true">
+      <div class="sr-only">
+      </div>
+      </div>
     </div>
-    
+    <br><br>
   </body>
 </html>
