@@ -35,11 +35,11 @@ h1 {
 
 #navbar a.active {
   background-color: #fff9f0;
-  color: #5b7553;
+  color: #465940;
 }
 
 #navbar a:hover {
-  background-color: #5b7553;
+  background-color: #475c42;
   color: white;
 }
 
@@ -70,7 +70,7 @@ h1 {
   padding: 10px;
   margin-top: 10px;
   border: none;
-  background-color: #5b7553;
+  background-color: #465940;
   color: white;
   border-radius: 6px;
   font-weight: 600;
@@ -87,5 +87,5 @@ h1 {
 
 .link_to_github {
   text-decoration: none;
-  color: #5b7553;
+  color: #465940;
 }
