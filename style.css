@@ -84,3 +84,8 @@ h1 {
   border-radius: 1rem;
   display: grid;
 }
+
+.link_to_github {
+  text-decoration: none;
+  color: #5b7553;
+}
