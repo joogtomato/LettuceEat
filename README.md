@@ -15,9 +15,20 @@ Our project aims to draw inspiration from these examples in supporting the commu
 
 # Methodology
 
-## Parser that extracts menu data into a CSV file 
-
+- Parser that extracts menu data into a CSV file 
 Our parser works on restaurants that have the menu along with the ingredients for each menu item on a webpage. To implement the parse, we used the Python libraries BeautifulSoup and Selenium. First, we use Selenium to parse the website into html, and print out the html. Then, we manually look in the html for the tags where the menu items and menu descriptions are stored. Next, BeautifulSoup is used to search the website for those menu items and descriptions and store the results in an array. This is used to create a csv using the pandas package. For each restaurant, we created a csv file with a column for the menu item names, a column for the corresponding menu description, and an optional column for the dietary information (like gluten free or vegan) if that information is on the website. 
+
+- Airtable that filters menu data depending on user input
+We utilized Airtable, a cloud-based, user-friendly interface to help us create our relational database. We did this by taking the produced comma separated value formatted menus for each restaurant and importing them to Airtable. We then contextualize the restaurant and their respective menu by adding dietary-preset tags based on the ingredient description and recipes found online. These dietary presets help curb any potential missing results that may occur by just searching ingredients by name. For example, if we were to filter out anything that contains “pork,” then bacon or prosciutto will still show up in the menu, even though it is also a pork-derived product, thus showing our users inaccurate results. We also ensured that the filters would not exclude items based on their description. For example if a restaurant had fried rice as a menu item and included “+$2 for pork, +2 for prawn, +$3 for beef,” it means that the fried rice normally does not contain “pork”, “prawn” or “beef” but it would still be filtered out for users because the description contained potentially filtered keywords when the menu dish may not inherently contain that ingredient. Additionally, to maintain accuracy, we also separated two types of the same item. For example, if there is a chicken samosa and a vegetable samosa, we separated them to be different menu entries so that the samosa dish would not automatically be filtered out if someone was looking for a vegan/vegetarian alternative because of the “chicken” included in the menu description. By doing this, we are explicit about what items contain what ingredients, making the user experience guess-free. Additionally, we are including Google Maps navigation to each restaurant, to ensure user ease if they choose a restaurant based on a menu item that they find satisfying as a result of our website. 
+
+- Testing the app as someone with a dietary restriction
+As someone who cannot eat pork, eats Halal for certain periods of time, is mainly pescatarian, and cannot consume dairy at times because of medications, throughout the year for religious reasons, our group member Anusha tested out the app to see how the results would show up based on her various dietary needs. She entered the following restrictions into our filtering system:
+    “dietary presets HAS NONE OF pork”
+    “dietary presets HAS ANY OF dairy-free, seafood, shellfish
+    “ingredients does not contain chicken”
+    “ingredients does not contain beef”
+She looked through the resulting menu items presented to her by the database and found that the results were satisfactory and did not include any errors or potential ingredients that would violate her dietary restrictions. She found the filtering system easy to navigate and more efficient than going to the physical restaurant and skimming through the menu in a rush. 
+
 
 # Disability Justice Perspective
 
