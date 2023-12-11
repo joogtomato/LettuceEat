@@ -1,5 +1,5 @@
 # LettuceEat
-[Link to our product](https://joogtomato.github.io/LettuceEat/).
+[Link to our product Lettuce Eat](https://joogtomato.github.io/LettuceEat/).
 
 # Introduction
 
